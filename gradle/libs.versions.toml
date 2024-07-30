@@ -1,0 +1,41 @@
+[versions]
+agp = "8.5.0"
+androidxBrowser = "1.5.0"
+auth = "2.1.0"
+gsonVersion = "2.10.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.10.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+okhttp = "4.9.3"
+playServicesMaps = "18.1.0"
+places = "3.0.0"
+retrofit = "2.9.0"
+spotifyAppRemoteRelease = "0.8.0"
+spotifyAppRemoteVersion = "0.7.1"
+
+[libraries]
+android-spotify-app-remote = { module = "com.spotify.android:spotify-app-remote", version.ref = "spotifyAppRemoteVersion" }
+androidx-browser-browser = { module = "androidx.browser:browser", version.ref = "androidxBrowser" }
+auth = { module = "com.spotify.android:auth", version.ref = "auth" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+google-gson = { module = "com.google.code.gson:gson", version.ref = "gsonVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+places = { module = "com.google.android.libraries.places:places", version.ref = "places" }
+play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+spotify-app-remote-release = { module = "com.spotify.sdk:spotify-app-remote-release", version.ref = "spotifyAppRemoteRelease" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+
